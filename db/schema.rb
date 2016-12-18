@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20161217035014) do
   end
 
   create_table "places", force: :cascade do |t|
+    t.string   "name"
     t.string   "latitude"
     t.string   "longitude"
     t.integer  "user_id"
