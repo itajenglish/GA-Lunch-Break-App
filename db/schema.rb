@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20161217035014) do
   end
 
   create_table "places", force: :cascade do |t|
+    t.string   "name"
     t.string   "latitude"
     t.string   "longitude"
     t.integer  "user_id"
@@ -37,9 +38,10 @@ ActiveRecord::Schema.define(version: 20161217035014) do
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.string   "password"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "encrypted_password"
+    t.string   "salt"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   add_foreign_key "comments", "places"
