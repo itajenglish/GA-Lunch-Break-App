@@ -14,4 +14,6 @@
 
 * Postgresql
 
+* Materialize
 
+* BCrypt

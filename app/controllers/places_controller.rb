@@ -12,7 +12,7 @@ class PlacesController < ApplicationController
   def create
     place = params['place']
     Place.create(name: place['name'],
-                  address: place['address'],
+                  # address: place['address'],
                   latitude: place['latitude'],
                   longitude: place['longitude'])
     redirect_to(:back)

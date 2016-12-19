@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ @import "materialize"
 #map {
   height: 400px;
   width: 100%;
