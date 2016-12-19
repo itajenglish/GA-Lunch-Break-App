@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-resources :users, only:[:index,:show,:create,:new]
+
+  root to: "places#index"
+  resources :places
+  resources :users, only:[:index,:show,:create,:new]
+  resources :comments
 end
