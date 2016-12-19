@@ -5,12 +5,12 @@ class PlacesController < ApplicationController
   end
 
   def create
-    @place = params['place']
+    @place = Place.new()
     Place.create(name: @place['name'],
                   address: @place['address'],
                   latitude: @place['latitude'],
                   longitude: @place['longitude'])
-    redirect_to(:back)
+    redirect_to("/places")
   end
 
   def destroy
@@ -30,6 +30,10 @@ class PlacesController < ApplicationController
                   longitude: @place['longitude'])
 
     redirect_to(:back)
+  end
+
+  def place_params
+    params(:place).permit(:name, :address, :latitude, :longitude)
   end
 
 end
