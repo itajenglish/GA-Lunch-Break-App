@@ -1,24 +1,19 @@
-# README
+#GA Lunch Break
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+###Made by: Taj English, Laura Ayala, Jennifer Christie, Jayan Zaman, Matt Cabezon
 
-Things you may want to cover:
+* This app is meant for GA students to see where other students may go during their breaks.
 
-* Ruby version
+####We used:
 
-* System dependencies
+* Ruby on Rails
 
-* Configuration
+* Google Maps API
 
-* Database creation
+* Javascript
 
-* Database initialization
+* Postgresql
 
-* How to run the test suite
+* Materialize
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* BCrypt
