@@ -7,7 +7,7 @@ class User < ApplicationRecord
   validates_length_of :password, :in => 3..20, :on => :create
   before_save :encrypt_password
   after_save :clear_password
-  
+
   def encrypt_password
     if password.present?
       self.salt = BCrypt::Engine.generate_salt

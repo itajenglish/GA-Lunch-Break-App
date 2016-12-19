@@ -13,22 +13,13 @@
  *= require_tree .
  *= require_self
  */
- @import "materialize"
+
 #map {
   height: 400px;
   width: 100%;
   float: right;
 }
 
-
-#showing{
-  height:  300px;
-  width: 50%;
-}
-
-#current{
-  padding-top: 25px;
-}
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
