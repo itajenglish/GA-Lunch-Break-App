@@ -1,6 +1,18 @@
 <h1>Editing Places</h1>
 
-<%= render 'form', place: @place %>
+<%= form_for :place, method: 'PUT', url: {action: "update"} do |c| %>
+<%= label(:place, :name) %><br>
+<%= c.text_field :name %><br>
+<%= label(:place, :address) %><br>
+<%= c.text_field :address %><br>
+<%= label(:place, :latitude) %><br>
+<%= c.text_field :latitude %><br>
+<%= label(:place, :longitude) %><br>
+<%= c.text_field :longitude %><br>
+<% hidden_field(:place, :id) %>
+  <%= c.submit %>
+<% end %>
+
 
 <%= link_to 'Show', @place %> |
 <%= link_to 'Back', places_path %>
