@@ -28,6 +28,7 @@ class PlacesController < ApplicationController
                   address: @place['address'],
                   latitude: @place['latitude'],
                   longitude: @place['longitude'])
+
     redirect_to(:back)
   end
 

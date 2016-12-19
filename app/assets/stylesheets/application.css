@@ -13,13 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
 #map {
   height: 400px;
   width: 100%;
+  float: right;
 }
-#current{
-  padding-top: 25px;
-}
+
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
@@ -72,4 +72,3 @@
         font-size: 13px;
         font-weight: 300;
       }
-

@@ -12,54 +12,53 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require materialize-sprockets
 //= require turbolinks
 //= require_tree .
-function initMap() {
-    var uluru = {
-        lat: 40.739,
-        lng: -73.990
-    };
-    var matt = {
-        lat: 41.739,
-        lng: -74.990
-    };
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: uluru,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
-    var myMarker = new google.maps.Marker({
-        position: uluru,
-        map: map,
-        draggable: true
-    });
-    var mattMarker = new google.maps.Marker({
-        position: matt,
-        map: map,
-        draggable: true
-    });
-    var contentString = "<a href='/users/new'>New User</a>"
-    var infowindow = new google.maps.InfoWindow({
-        content: contentString
-    });
-    myMarker.addListener('click', function() {
-        infowindow.open(map, myMarker);
-    });
 
 
-    google.maps.event.addListener(myMarker, 'dragend', function(evt) {
-        document.getElementById('current').innerHTML = '<p>Marker dropped: Current Lat: ' + evt.latLng.lat().toFixed(3) + ' Current Lng: ' + evt.latLng.lng().toFixed(3) + '</p>';
-    });
+// function initMap() {
+//     var uluru = {
+//         lat: 40.739,
+//         lng: -73.990
+//     };
+//     var matt = {
+//         lat: 41.739,
+//         lng: -74.990
+//     };
+//     var map = new google.maps.Map(document.getElementById('map'), {
+//         zoom: 15,
+//         center: uluru,
+//         mapTypeId: google.maps.MapTypeId.ROADMAP
+//     });
+//     var myMarker = new google.maps.Marker({
+//         position: uluru,
+//         map: map,
+//         draggable: true
+//     });
+//     var mattMarker = new google.maps.Marker({
+//         position: matt,
+//         map: map,
+//         draggable: true
+//     });
+//     var contentString = "<a href='/users/new'>New User</a>"
+//     var infowindow = new google.maps.InfoWindow({
+//         content: contentString
+//     });
+//     myMarker.addListener('click', function() {
+//         infowindow.open(map, myMarker);
+//     });
 
-    google.maps.event.addListener(myMarker, 'dragstart', function(evt) {
-        document.getElementById('current').innerHTML = '<p>Currently dragging marker...</p>';
-    });
 
-}
+//     google.maps.event.addListener(myMarker, 'dragend', function(evt) {
+//         document.getElementById('current').innerHTML = '<p>Marker dropped: Current Lat: ' + evt.latLng.lat().toFixed(3) + ' Current Lng: ' + evt.latLng.lng().toFixed(3) + '</p>';
+//     });
 
-// This example requires the Places library. Include the libraries=places
-// parameter when you first load the API. For example:
-// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+//     google.maps.event.addListener(myMarker, 'dragstart', function(evt) {
+//         document.getElementById('current').innerHTML = '<p>Currently dragging marker...</p>';
+//     });
+
+// }
 
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
