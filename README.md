@@ -21,7 +21,7 @@
 
 ##Contributors:
 
-**Name** | **LinkedIn** | **GitHub** 
+**_Name_** | **_LinkedIn_** | **_GitHub_** 
 ---------| -------------|------------
 Laura Ayala | [LinkedIn](https://www.linkedin.com/in/ayalalaura) | [GitHub](https://github.com/ayalalaura)
 Jennifer Christie | [LinkedIn](https://www.linkedin.com/in/jenniferrchristie) | [GitHub](https://github.com/JennRC87)

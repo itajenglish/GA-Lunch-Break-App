@@ -25,7 +25,7 @@ skip_before_filter  :verify_authenticity_token
   end
 
   def show
-    @place = Place.find_by(id: params[:id])
+    @place = Place.find(params[:id])
   end
 
   def update
