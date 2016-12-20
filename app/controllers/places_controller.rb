@@ -1,8 +1,10 @@
 class PlacesController < ApplicationController
 skip_before_filter  :verify_authenticity_token
 # this code allowed me to skip an error that said, "Can't verify CSRF token authenticity."
+before_filter :authorize
+
   def index
-    @places = Place.all
+    @places = Place.where(user_id: session[:user_id])
   end
 
   def create
@@ -11,12 +13,12 @@ skip_before_filter  :verify_authenticity_token
                   address: @place['address'],
                   latitude: @place['latitude'],
                   longitude: @place['longitude'],
-                  user_id: 1)
+                  user_id: session[:user_id])
     redirect_to("/places")
   end
 
   def edit
-    @info = Place.find_by(id: params[:id])
+    @place = Place.find(params[:id])
   end
 
   def destroy
@@ -25,12 +27,12 @@ skip_before_filter  :verify_authenticity_token
   end
 
   def show
-    @place = Place.find_by(id: params[:id])
+    @place = Place.find(params[:id])
   end
 
   def update
     @place = params['place']
-    Place.update( params['id'],
+    Place.update( params[:id],
                   name: @place['name'],
                   address: @place['address'],
                   latitude: @place['latitude'],
