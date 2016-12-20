@@ -1,9 +1,18 @@
-<h1>Login</h1>
+<%= render 'layouts/header' %>
+<main>
+  <div class="container login-form">
+    <div class="col s8 offset-s2">
+     <h1>Login</h1>
 
-<%= form_tag '/login' do %>
+      <%= form_tag '/login' do %>
 
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
-  <%= submit_tag "Submit" %>
+        <h5>Email:</h5> <%= text_field_tag :email %>
+        <h5>Password:</h5> <%= password_field_tag :password %>
+      <%= submit_tag "Submit" %>
 
-<% end %>
+      <% end %>
+    </div>
+  </div>
+</main>
+
+<%= render 'layouts/footer' %>
