@@ -7,6 +7,7 @@
 
   </head>
   <body>
+  <%= render 'layouts/header' %>
     <input id="pac-input" class="controls" type="text"
         placeholder="Enter a location">
     <div id="type-selector" class="controls">
@@ -52,7 +53,7 @@
         <td><%= place.name %></td>
         <th colspan="3"></th>
         <td><%= link_to 'Details', place %></td>
-        <td><%= link_to 'Edit', edit_user_path(place) %></td>
+        <td><%= link_to 'Edit', edit_place_path(place) %></td>
         <td><%= link_to 'Delete', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -61,7 +62,7 @@
 
 <br>
 <%= link_to 'New Place', new_place_path %>
-<%= render 'footer' %>
+<%= render 'layouts/footer' %>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAchzUgA7nscKvpxt3v_YoC1pn5_55GcM&libraries=places&callback=initMap" async defer></script>
   </body>
   </html>

@@ -15,6 +15,13 @@
  */
  @import "materialize";
 
+@font-face {
+  font-family: 'PFDinTextCompPro-Bold';
+  src:font-url('PFDinTextCompPro-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #map {
   height: 400px;
   width: 100%;
@@ -31,6 +38,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
+        font-family: PFDinTextCompPro-Bold;
       }
       .controls {
         margin-top: 10px;
@@ -72,6 +80,24 @@
         font-family: Roboto;
         font-size: 13px;
         font-weight: 300;
+      }
+
+      nav {
+         padding: 20px;
+         height: 85px;
+         line-height: 30px;
+      }
+
+        .nav-wrapper {
+         height: 60px;
+      }
+
+        a .black-text {
+         font-size: 100px;
+      }
+
+      .brand-logo{
+        padding-bottom: 10px;
       }
 
   footer.page-footer .footer-copyright {
