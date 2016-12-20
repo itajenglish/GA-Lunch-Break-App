@@ -120,9 +120,20 @@ function initMap() {
                 (place.address_components[2] && place.address_components[2].short_name || '')
             ].join(' ');
         }
-        document.getElementById('current').innerHTML = '<p>' + address + '</p>';
+
+        // document.getElementById('current').innerHTML = '<p>' + address + '</p>';
+        document.getElementById('place_address').value = address;
+        var lat = '';
+        lat = place.geometry.location.lat();
+        // document.getElementById('lat').innerHTML = '<p>' + lat + '</p>';
+        document.getElementById('place_latitude').value = lat;
+        var long = '';
+        long = place.geometry.location.lng();
+        // document.getElementById('long').innerHTML = '<p>' + long + '</p>';
+        document.getElementById('place_longitude').value = long;
         infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
         infowindow.open(map, marker);
+
     });
 
 
