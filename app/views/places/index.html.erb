@@ -6,7 +6,11 @@
     <meta charset="utf-8">
 
   </head>
+<<<<<<< HEAD
   <body> -->
+=======
+  <body>
+>>>>>>> 10833cc41bc1c815b91db0bbb96875dd06efa356
   <%= render 'layouts/header' %>
     <input id="pac-input" class="controls" type="text"
         placeholder="Enter a location">
@@ -50,7 +54,7 @@
       <tr>
         <td><%= place.name %></td>
         <th colspan="3"></th>
-        <td><%= place.name %></td>
+        <td><%= place.address %></td>
         <th colspan="3"></th>
         <td><%= link_to 'Details', place %></td>
         <td><%= link_to 'Edit', edit_place_path(place) %></td>
@@ -62,7 +66,13 @@
 
 <br>
 <%= link_to 'New Place', new_place_path %>
-
+<%= render 'layouts/footer' %>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAchzUgA7nscKvpxt3v_YoC1pn5_55GcM&libraries=places&callback=initMap" async defer></script>
+<<<<<<< HEAD
 <!--   </body>
 </html> -->
+=======
+  </body>
+  </html>
+
+>>>>>>> 10833cc41bc1c815b91db0bbb96875dd06efa356
