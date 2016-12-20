@@ -1,5 +1,5 @@
-#GA Lunch Break ![slack for ios upload null](https://cloud.githubusercontent.com/assets/22873862/21360244/153a4c62-c6ad-11e6-9197-a6f359599812.png)
-
+#GA Lunch Break 
+![slack for ios upload null](https://cloud.githubusercontent.com/assets/22873862/21360244/153a4c62-c6ad-11e6-9197-a6f359599812.png)
 
 ###Made by: Taj English, Laura Ayala, Jennifer Christie, Jayan Zaman, Matt Cabezon
 
