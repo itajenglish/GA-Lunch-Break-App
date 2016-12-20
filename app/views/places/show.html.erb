@@ -6,7 +6,7 @@
   <title></title>
   <link rel="stylesheet" href="">
 </head>
-<body>
+<body class="container">
 <h1>One Place at a Time, Bruh!</h1>
 <h2>Name: <%= @place.name %></h2>
   <ul>
@@ -15,6 +15,17 @@
   <li>Longitude: <%= @place.longitude %></li>
   </ul>
 <br><hr>
+<% @comment.each do |c| %>
+<p><%= c.content %></p>
+
+<% end %>
+<br><hr>
 <h2>Comments</h2>
+<%= form_tag(controller: "comments", method: "POST") do %>
+  <%= label_tag(:comment, "Comment On Your Experiece") %>
+  <%= text_field_tag(:comment) %>
+  <%= hidden_field_tag('id', @place.id) %>
+  <%= submit_tag("Comment") %>
+<% end %>
 </body>
 </html>
