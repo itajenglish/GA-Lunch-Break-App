@@ -13,345 +13,98 @@
  *= require_tree .
  *= require_self
  */
-  @import "materialize";
+ @import "materialize";
 
-Jennifer Christie
-
-|
-active|@jennrc87
-
-Call Jennifer Christie
- Conversation Settings
-Show Conversation Details
-
-Show Mentions & Reactions
-Show Starred Items
-More Items
-
-*bold* _italics_ ~strike~ `code` ```preformatted``` >quote
-Jennifer Christie  @jennrc87
-WDI NYC
-This is the very beginning of your direct message history with Jennifer Christie.
-
-
------ November 3rd -----
-Jennifer Christie [12:07 PM]
-I am an excited and enthusiastic person, who’s inquisitive about life. Whether it’s for my job, or learning
-For me, passion is a key attribute that determines the outcome of your success. I have won various awards for my outstanding contributions to my teams.  Having lead an unorthodox career path, my personal experiences make me unique and adaptable to any situation. I want to impact the world through my imaginative approach.
-
-
------ November 6th -----
-Laura Ayala [5:39 PM]
-Hey! This looks like a good first draft! Do you still want me to take a look?
-
-Jennifer Christie [5:54 PM]
-Yes please :grin:
-
-Jennifer Christie [6:12 PM]
-I am an excited and enthusiastic person, who’s inquisitive about life. Whether it’s for my job, or taking the initiative to learn on my own, I have always been hard-working. For me, passion is a key attribute that determines the outcome of your success. I have won various awards for my outstanding contributions to my teams, and I realize that when we work together, we achieve the best results. Having lead an unorthodox career path, my personal experiences and straightforward approach, make me unique and adaptable to any situation. I want to impact the world through my imaginative approach to make life more enjoyable for people.
-
-Laura Ayala [7:20 PM]
-This is awesome!
-
-[7:22]
-I would recommend adding the names of a couple of those awards and add an opening statement about web development/being a web developer. Ex. (I am a Full Stack Web Developer who is always ready for a challenge...)
-
-Jennifer Christie [7:23 PM]
-Thanks!!!!
-
-Laura Ayala [7:31 PM]
-You're welcome :smile:
-
-
------ December 18th -----
-Jennifer Christie [5:14 PM]
-uploaded an image: I came up with 3 designs for the website.
-Add Comment
-
-Jennifer Christie [5:15 PM]
-uploaded an image: IMG_1337.JPG
-Add Comment
-
-Jennifer Christie [5:15 PM]
-uploaded an image: IMG_1338.JPG
-Add Comment
-
-Jennifer Christie [5:16 PM]
-right now I’m working on a quick logo design
-
-[5:16]
-message me if you have any ?s
-
-Laura Ayala [5:20 PM]
-Oooo, the second and third ones are really nice!
-
-Jennifer Christie [5:20 PM]
-the first one didn’t draw so well
-
-Laura Ayala [5:20 PM]
-I messaged the group so we'll see what's in the backend tomorrow
-
-[5:20]
-That way we'll know what to add to the header/footer, etc.
-
-[5:20]
-This is exciting!
-
-Jennifer Christie [5:21 PM]
-I know…I’m in my element…I just wished we didn’t lose 2 days because of the weather
-
-[5:21]
-or at least saturday
-
-Laura Ayala [5:22 PM]
-Yeah, I feel yah. But Taj was working remotely and Jayan and Matt were at GA this weekend
-
-[5:22]
-I think we'll be in a really good place by Wednesday
-
-[5:22]
-And able to get any last touches in before Thursday
-
-Jennifer Christie [5:23 PM]
-I wasn’t going to ga yesterday…nj not cleaned as fast as ny is
-
-Laura Ayala [5:23 PM]
-Omg I can't imagine what it was like out there
-
-Jennifer Christie [5:24 PM]
-I looked at my parking lot and it was clean but my mom told me the streets were nasty and icey
-
-Jennifer Christie [5:43 PM]
-uploaded an image: Screen Shot 2016-12-18 at 5.43.00 PM.png
-Add Comment
-
-Jennifer Christie [5:43 PM]
-do you have a preference
-
-Laura Ayala [5:44 PM]
-Ohhhsnap! FIRE!
-
-[5:44]
-I really like the second one
-
-Jennifer Christie [5:44 PM]
-me too
-
-Laura Ayala [5:44 PM]
-That font is really nice though
-
-[5:45]
-Maybe we can use it for headers throughout the site?
-
-[5:45]
-Like in the nav?
-
-Jennifer Christie [5:46 PM]
-i just got adobe suite in this computer and can work with it now…yeah i was thinking that too…i’m going to play a little with the placement of lunch break
-
-Laura Ayala [5:46 PM]
-Cool!
-
-[5:46]
-I've been looking up how to use Materialize with Rails
-
-[5:47]
-So there are a couple gems to work with
-
-[5:47]
-, which is awesome
-
-Jennifer Christie [5:49 PM]
-i was playing with materialize and i figured out how to change the font that comes default with the template but i don’t know if you can still change smaller stuff like p tags within stuff
-
-Laura Ayala [5:49 PM]
-Nice!
-
-[5:49]
-Ok, we can look into that
-
-Jennifer Christie [6:53 PM]
-uploaded an image: Screen Shot 2016-12-18 at 6.52.44 PM.png
-Add Comment
-
-Jennifer Christie [6:53 PM]
-i narrowed it down…i forgot how consumed i could get with this
-
-Laura Ayala [6:54 PM]
-Lol nice!
-
-[6:55]
-Send 'em over to the Slack channel :grimacing:
-
-[6:55]
-Our team would love them and we can narrow it down
-
-Jennifer Christie [6:55 PM]
-cool
-
-
------ Yesterday December 19th, 2016 -----
-Laura Ayala [10:02 AM]
-https://www.youtube.com/watch?v=A4pv_NZV2XA
-
-
-slackbot BOT [10:02 AM] Only visible to you
-OK, I've sent a notification to jennrc87.
-
------ Today December 20th, 2016 -----
-Laura Ayala [10:02 AM]
-nav {
- padding: 20px;
- height: 85px;
- line-height: 30px;
-}
-
-.nav-wrapper {
- height: 60px;
-}
-
-a .black-text {
- font-size: 100px;
-}
-
-
-slackbot BOT [10:02 AM] Only visible to you
-jennrc87 has snoozed notifications. Send one anyway? Send notification
-Laura Ayala [10:03 AM]
-added a Ruby snippet
-# Create a _header.html.erb with the below code in the Layouts folder in Views
-​
-<nav class="grey lighten-4">
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo"><%= image_tag("galb.png", size: "150x63", alt: "GA Lunch Break") %></a>
-    <ul class="right hide-on-med-and-down">
-      <li><a class="waves-effect waves-light btn green lighten-2">Home</a></li>
-      <li><a href="#" class="black-text">Grub</a></li>
-      <li><a href="#" class="black-text">Dranks</a></li>
-      <li><a href="#" class="black-text">Hangouts</a></li>
-      <li><a href="#" class="black-text">Log In</a></li>
-      <li><a href="#" class="black-text">Sign Up</a></li>
-    </ul>
-  </div>
-</nav>
-Add Comment Click to expand inline 15 lines
-
-Laura Ayala [10:07 AM]
-added a Ruby snippet
-<%= render 'layouts/header' %>
-Add Comment
-
-Laura Ayala [10:34 AM]
-added a Ruby snippet
-Declare your font in your css like so:
-​
-@font-face {
-  font-family: 'Icomoon';
-  src:url('icomoon.eot');
-  src:url('icomoon.eot?#iefix') format('embedded-opentype'),
-    url('icomoon.svg#icomoon') format('svg'),
-    url('icomoon.woff') format('woff'),
-    url('icomoon.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-Make sure that the font is named exactly like in the url portion of the declaration. Capital letters and punctuation marks make a difference. So in this case the font should have the name icomoon.
-Add Comment Click to expand inline 13 lines
-
-new messages
-Jennifer Christie [12:18 PM]
-added a C++ snippet
-@import "materialize";
-​
 @font-face {
   font-family: 'PFDinTextCompPro-Bold';
   src:font-url('PFDinTextCompPro-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-​
+
 #map {
   height: 400px;
   width: 100%;
   float: right;
 }
-​
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 50%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        font-family: PFDinTextCompPro-Bold;
-      }
-      .controls {
-        margin-top: 10px;
-        border: 1px solid transparent;
-        border-radius: 2px 0 0 2px;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        height: 32px;
-        outline: none;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      }
-​
-      #pac-input {
-        background-color: #fff;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        width: 300px;
-      }
-​
-      #pac-input:focus {
-        border-color: #4d90fe;
-      }
-​
-      .pac-container {
-        font-family: Roboto;
-      }
-​
-      #type-selector {
-        color: #fff;
-        background-color: #4d90fe;
-        padding: 5px 11px 0px 11px;
-      }
-​
-      #type-selector label {
-        font-family: Roboto;
-        font-size: 13px;
-        font-weight: 300;
-      }
-​
+
+/* Always set the map height explicitly to define the size of the div element that contains the map. */
+#map {
+  height: 50%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: PFDinTextCompPro-Bold;
+}
+
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.pac-container {
+  font-family: Roboto;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
 nav {
-    padding: 20px;
-    height: 85px;
-    line-height: 30px;
+  padding: 20px;
+  height: 85px;
+  line-height: 30px;
 }
-​
+
 .nav-wrapper {
-    height: 60px;
+  height: 60px;
 }
-​
+
 a .black-text {
   font-size: 100px;
 }
-​
+
 header li {
   font-size: 50px;
 }
-​
+
 footer li {
   display: inline-block;
 }
-​
+
 footer.page-footer .footer-copyright {
   border-top: thin solid #A3A3A3;
 }
