@@ -1,6 +1,8 @@
 class PlacesController < ApplicationController
 skip_before_filter  :verify_authenticity_token
 # this code allowed me to skip an error that said, "Can't verify CSRF token authenticity."
+before_filter :authorize
+
   def index
     @places = Place.all
   end
