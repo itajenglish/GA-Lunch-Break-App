@@ -15,6 +15,14 @@
  */
  @import "materialize";
 
+body{
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
 @font-face {
   font-family: 'PFDinTextCompPro-Bold';
   src:font-url('PFDinTextCompPro-Bold.ttf') format('truetype');
