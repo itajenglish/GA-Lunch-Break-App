@@ -16,7 +16,7 @@ skip_before_filter  :verify_authenticity_token
   end
 
   def edit
-    @info = Place.find_by(id: params[:id])
+    @place = Place.find(params[:id])
   end
 
   def destroy
@@ -30,7 +30,7 @@ skip_before_filter  :verify_authenticity_token
 
   def update
     @place = params['place']
-    Place.update( params['id'],
+    Place.update( params[:id],
                   name: @place['name'],
                   address: @place['address'],
                   latitude: @place['latitude'],
