@@ -1,14 +1,19 @@
 <h1>Editing Places</h1>
 
 <%= form_for @place do |c| %>
+
 <%= c.label :name %><br>
 <%= c.text_field :name %><br>
+
 <%= c.label :address %><br>
 <%= c.text_field :address %><br>
+
 <%= c.label :latitude %><br>
 <%= c.text_field :latitude %><br>
+
 <%= c.label :longitude %><br>
 <%= c.text_field :longitude %><br>
+
 <% hidden_field(:place, :id) %>
   <%= c.submit %>
 <% end %>

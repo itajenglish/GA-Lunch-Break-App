@@ -7,7 +7,14 @@
   <link rel="stylesheet" href="">
 </head>
 <body>
-  <div id="map showing"></div>
-  <div id="current">Nothing yet...</div>
+<h1>One Place at a Time, Bruh!</h1>
+<h2>Name: <%= @place.name %></h2>
+  <ul>
+  <li>Address: <%= @place.address %></li>
+  <li>Latitude: <%= @place.latitude %></li>
+  <li>Longitude: <%= @place.longitude %></li>
+  </ul>
+<br><hr>
+<h2>Comments</h2>
 </body>
 </html>
