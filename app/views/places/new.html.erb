@@ -1,3 +1,4 @@
+<!-- form for submitting new places -->
 <%= form_for :place, method: 'create', url: {action: "create"} do |f| %>
 <%= label(:place, :name) %><br>
 <%= f.text_field :name %><br>
