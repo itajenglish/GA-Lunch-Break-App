@@ -17,7 +17,9 @@
 * Postgresql
 * Materialize
 * BCrypt
+* Sessions
 
+--------------------------------------------------
 
 ##Contributors:
 
