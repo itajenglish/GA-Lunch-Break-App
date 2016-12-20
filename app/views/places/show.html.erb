@@ -15,12 +15,12 @@
   <li>Longitude: <%= @place.longitude %></li>
   </ul>
 <br><hr>
+<h2>Comments</h2>
 <% @comment.each do |c| %>
 <p><%= c.content %></p>
 
 <% end %>
 <br><hr>
-<h2>Comments</h2>
 <%= form_tag(controller: "comments", method: "POST") do %>
   <%= label_tag(:comment, "Comment On Your Experiece") %>
   <%= text_field_tag(:comment) %>
