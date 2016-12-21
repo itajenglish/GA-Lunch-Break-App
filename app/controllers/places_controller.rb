@@ -38,7 +38,7 @@ before_filter :authorize
                   address: @place['address'],
                   latitude: @place['latitude'],
                   longitude: @place['longitude'],
-                  user_id: 1)
+                  user_id: session[:user_id])
 
     redirect_to("/places")
   end
