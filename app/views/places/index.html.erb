@@ -10,6 +10,18 @@
 
 <br>
 
+<%= form_for :place, method: 'create', url: {action: "create"} do |f| %>
+<%= label(:place, :name) %><br>
+<%= f.text_field :name %><br>
+<%= label(:place, :address) %><br>
+<%= f.text_field :address %><br>
+<%= label(:place, :latitude) %><br>
+<%= f.text_field :latitude %><br>
+<%= label(:place, :longitude) %><br>
+<%= f.text_field :longitude %><br>
+<br>
+<%= f.submit "Save This Place" %>
+<% end %>
 <h1>Your Recommendations</h1>
 
 <table>
@@ -38,20 +50,7 @@
 </table>
 
 <br>
-<%= link_to 'New Place', new_place_path %>
 
-<%= form_for :place, method: 'create', url: {action: "create"} do |f| %>
-<%= label(:place, :name) %><br>
-<%= f.text_field :name %><br>
-<%= label(:place, :address) %><br>
-<%= f.text_field :address %><br>
-<%= label(:place, :latitude) %><br>
-<%= f.text_field :latitude %><br>
-<%= label(:place, :longitude) %><br>
-<%= f.text_field :longitude %><br>
-<br>
-<%= f.submit "Save This Place" %>
-<% end %>
 
 <%= render 'layouts/footer' %>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAchzUgA7nscKvpxt3v_YoC1pn5_55GcM&libraries=places&callback=initMap" async defer></script>
