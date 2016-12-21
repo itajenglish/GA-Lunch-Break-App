@@ -1,6 +1,7 @@
   <body>
   <%= render 'layouts/header' %>
-    <input id="pac-input" class="controls" type="text" placeholder="Enter a location">
+    <input id="pac-input" class="controls" type="text"
+        placeholder="Enter a location">
 
     <div id="map"></div>
 
@@ -8,7 +9,19 @@
 
 <br>
 
-<h1>GA Students Recommendations</h1>
+<%= form_for :place, method: 'create', url: {action: "create"} do |f| %>
+<%= label(:place, :name) %><br>
+<%= f.text_field :name %><br>
+<%= label(:place, :address) %><br>
+<%= f.text_field :address %><br>
+<%= label(:place, :latitude) %><br>
+<%= f.text_field :latitude %><br>
+<%= label(:place, :longitude) %><br>
+<%= f.text_field :longitude %><br>
+<br>
+<%= f.submit "Save This Place" %>
+<% end %>
+<h1>Your Recommendations</h1>
 
 <table>
   <thead>
@@ -36,19 +49,6 @@
 </table>
 
 <br>
-<%= link_to 'New Place', new_place_path %>
-<%= form_for :place, method: 'create', url: {action: "create"} do |f| %>
-<%= label(:place, :name) %><br>
-<%= f.text_field :name %><br>
-<%= label(:place, :address) %><br>
-<%= f.text_field :address %><br>
-<%= label(:place, :latitude) %><br>
-<%= f.text_field :latitude %><br>
-<%= label(:place, :longitude) %><br>
-<%= f.text_field :longitude %><br>
-<br>
-<%= f.submit "Save This Place" %>
-<% end %>
 
 
 <%= render 'layouts/footer' %>
