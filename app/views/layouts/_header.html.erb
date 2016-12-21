@@ -1,39 +1,13 @@
-<!-- Dropdown Structure from Materialize docs http://materializecss.com/navbar.html-->
-<!-- Dropdown Items -->
-<header>
-
-<div class="sessions-bar grey lighten-3">
-    <% if current_user %>
-      Signed in as
-      <%= current_user.name %>
-     |
-      <%= link_to "Logout", '/logout' %>
-  <% else %>
-      <%= link_to 'Login', '/login' %>
-    |
-      <%= link_to 'Signup', '/signup' %>
-  <% end %>
-</div>
-
-  <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!" class="black-text">Grub</a></li>
-    <li class="divider"></li>
-    <li><a href="#!" class="black-text">Dranks</a></li>
-    <li class="divider"></li>
-    <li><a href="#!" class="black-text">Hangouts</a></li>
-  </ul>
-  <nav class="grey lighten-4">
-    <div class="nav-wrapper">
-     <a href="#" class="brand-logo"><%= image_tag("galb.png", size: "150x63", alt: "GA Lunch Break") %></a>
-     <ul class="right hide-on-med-and-down">
-       <!-- Dropdown Trigger-->
-        <li><a class="dropdown-button black-text" href="#!" data-activates="dropdown1"><h5>Categories</h5></a></li>
-        <li><a href="#" class="black-text"><h5>Log In</h5></a></li>
-        <li><a href="#" class="black-text"><h5>Sign Up</h5></a></li>
-      </ul>
-    </div>
-  </nav>
-
-</header>
-
-
+<nav class="grey lighten-4">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo"><%= image_tag("galb.png", size: "150x63", alt: "GA Lunch Break") %></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="waves-effect waves-light btn green lighten-2">Home</a></li>
+      <li><a href="#" class="black-text">Grub</a></li>
+      <li><a href="#" class="black-text">Dranks</a></li>
+      <li><a href="#" class="black-text">Hangouts</a></li>
+      <li><a href="#" class="black-text">Log In</a></li>
+      <li><a href="#" class="black-text">Sign Up</a></li>
+    </ul>
+  </div>
+</nav>

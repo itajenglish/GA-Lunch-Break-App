@@ -1,21 +1,20 @@
-<!-- form_for creating new users (/signup) -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <h1>Signup!</h1>
 
-<%= render 'layouts/header' %>
-<main>
-  <div class="container signup-form">
-    <div class="col s8 offset-s2">
-      <h1 class="form-headers">Signup</h1>
+  <%= form_for :user, url: '/users' do |f| %>
 
-       <%= form_for :user, url: '/users' do |f| %>
-        <h5>Name:</h5> <%= f.text_field :name %> <br>
-        <h5>Email:</h5> <%= f.text_field :email %> <br>
-        <h5>Password:</h5> <%= f.password_field :password %> <br>
-        <h5>Password Confirmation:</h5> <%= f.password_field :password_confirmation %>
-      <%= f.submit "Submit" %>
-      <% end %>
-    </div>
-  </div>
-</main>
+    Name: <%= f.text_field :name %> <br>
+    Email: <%= f.text_field :email %> <br>
+    Password: <%= f.password_field :password %> <br>
+    Password Confirmation: <%= f.password_field :password_confirmation %>
+    <%= f.submit "Submit" %>
 
-<%= render 'layouts/footer' %>
-
+  <% end %>
+  </body>
+</html>
