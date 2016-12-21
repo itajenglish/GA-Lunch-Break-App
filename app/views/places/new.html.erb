@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <link rel="stylesheet" href="">
-</head>
 <body class="background_bw">
   <%= form_for :place, method: 'create', url: {action: "create"} do |f| %>
+<%= render "layouts/header" %>
+
 <%= label(:place, :name) %><br>
 <%= f.text_field :name %><br>
 <%= label(:place, :address) %><br>
@@ -20,6 +14,7 @@
 <%= f.submit "Save This Place" %>
 <% end %>
 
-<%= render 'footer' %>
 </body>
-</html>
+
+<%= render "layouts/footer" %>
+
