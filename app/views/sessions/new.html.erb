@@ -1,14 +1,15 @@
 <%= render 'layouts/header' %>
 <main>
-  <div class="container login-form">
+  <div class="container login-form z-depth-2">
     <div class="col s8 offset-s2">
 
-     <h1 class="form-headers">Login</h1>
+     <h3 class="form-headers">SIGN IN</h3>
 
       <%= form_tag '/login' do %>
-        <h5>Email:</h5> <%= text_field_tag :email %>
-        <h5>Password:</h5> <%= password_field_tag :password %>
-      <%= submit_tag "Submit" %>
+        <h6 class="form-labels">Email:</h6> <%= text_field_tag :email %>
+        <h6 class="form-labels">Password:</h6> <%= password_field_tag :password %>
+      <%= submit_tag "Sign In", class: "btn waves-effect waves-light red accent-4"%>
+
       <% end %>
 
     </div>

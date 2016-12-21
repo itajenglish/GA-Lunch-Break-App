@@ -2,16 +2,16 @@
 
 <%= render 'layouts/header' %>
 <main>
-  <div class="container signup-form">
+  <div class="container signup-form z-depth-2">
     <div class="col s8 offset-s2">
-      <h1 class="form-headers">Signup</h1>
+      <h3 class="form-headers">SIGN UP</h3>
 
        <%= form_for :user, url: '/users' do |f| %>
         <h5>Name:</h5> <%= f.text_field :name %> <br>
         <h5>Email:</h5> <%= f.text_field :email %> <br>
         <h5>Password:</h5> <%= f.password_field :password %> <br>
         <h5>Password Confirmation:</h5> <%= f.password_field :password_confirmation %>
-      <%= f.submit "Submit" %>
+      <%= f.submit "Sign Up", class: "btn waves-effect waves-light red accent-4"%>
       <% end %>
     </div>
   </div>
