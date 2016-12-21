@@ -1,9 +1,17 @@
-<h1>Login</h1>
+<%= render 'layouts/header' %>
+<main>
+  <div class="container login-form z-depth-2">
+    <div class="col s8 offset-s2">
 
-<%= form_tag '/login' do %>
+     <h3 class="form-headers">SIGN IN</h3>
 
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
-  <%= submit_tag "Submit" %>
+      <%= form_tag '/login' do %>
+        <h6 class="form-labels">Email:</h6> <%= text_field_tag :email %>
+        <h6 class="form-labels">Password:</h6> <%= password_field_tag :password %>
+      <%= submit_tag "Sign In", class: "btn waves-effect waves-light red accent-4"%>
 
-<% end %>
+      <% end %>
+      </div>
+      </div>
+      </main>
+<%= render 'layouts/footer' %>
