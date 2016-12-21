@@ -27,7 +27,9 @@ class CommentsController < ApplicationController
   end
 
   def update
-
+    @comment = params['comment']
+    Comment.update( params[:id],
+                  content: @comment['content'])
   end
 
 end
