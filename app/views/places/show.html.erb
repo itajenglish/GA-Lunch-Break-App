@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="">
 </head>
 <body>
+  <%= render 'layouts/header' %>
 <h1>One Place at a Time, Bruh!</h1>
 <h2>Name: <%= @place.name %></h2>
   <ul>
@@ -29,5 +30,6 @@
   <%= hidden_field_tag('id', @place.id) %>
   <%= submit_tag("Comment") %>
 <% end %>
+<%= render 'layouts/footer' %>
 </body>
 </html>
