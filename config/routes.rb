@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root to: "places#index"
+  root to: "home#index"
   resources :places
   resources :users, only:[:index,:show,:create,:new]
   resources :comments
