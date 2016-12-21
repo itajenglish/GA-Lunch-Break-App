@@ -13,7 +13,8 @@
  *= require_tree .
  *= require_self
  */
- @import "materialize";
+
+@import "materialize";
 
 @font-face {
   font-family: 'PFDinTextCompPro-Bold';
@@ -21,14 +22,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
       /* element that contains the map. */
 #map {
   height: 50%;
   width: 100%;
   float: right;
 }
-
-
 
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -79,28 +79,114 @@
         font-weight: 300;
       }
 
-      nav {
-         padding: 20px;
-         height: 85px;
-         line-height: 30px;
-      }
 
-        .nav-wrapper {
-         height: 60px;
-      }
+nav {
+  padding: 8px;
+  height: 65px;
+  line-height: 20px;
+}
 
-      a .black-text {
-         font-size: 100px;
-      }
 
-      header li {
-        font-size: 50px;
-      }
 
-      footer li {
-        display: inline-block;
-      }
+a .black-text {
+  font-size: 100px;
+}
 
-      footer.page-footer .footer-copyright {
-        border-top: thin solid #A3A3A3;
-    }
+header li {
+  margin-top: 15px;
+}
+
+
+// line dividing footer content
+// footer.page-footer .footer-copyright {
+//   border-top: thin solid #616161;
+// }
+
+// footer{
+//   height: 150px;
+// }
+
+footer li {
+  display: inline-block;
+}
+
+//NEW STUFF!
+
+.header-username {
+//   // margin-top: -600px;
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.header-tab {
+  // padding: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+// Sticky footer code from Materialize
+// Ended up not working out (the footer stayed at the bottom, but the flex-direction attribute made the map disappear)
+  // body {
+    // display: flex;
+    // min-height: 100vh;
+    // min-height: 90vh;
+    // flex-direction: column;
+  // }
+
+//   main {
+//     flex: 1 0 auto;
+//   }
+
+.login-form {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  height: 440px;
+  width: 800px;
+  background-color: rgba(255,215,0,.8);
+  // border-style: solid;
+  // border-color: black;
+  // border-width: 2px;
+  padding: 40px;
+}
+
+.signup-form {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  height: 700px;
+  width: 800px;
+  background-color: rgba(255,215,0,.8);
+  // border-style: solid;
+  // border-color: black;
+  // border-width: 2px;
+  padding: 40px;
+}
+
+.btn {
+  font-size: 30px;
+  margin-top: 20px;
+  width: 720px;
+  text-align: center;
+}
+
+// // .form-headers{
+// //   // text-align: center;
+// // }
+
+.form-labels{
+  font-size: 20px;
+}
+
+// .sessions-bar {
+//   padding: 10px;
+// }
+
+// footer{
+// //   // position: absolute;
+// //   bottom: 0;
+//  // position:fixed;
+//  bottom:  0px;
+//  width: 100%;
+// }
+
+// body {padding:0;margin:0;}
