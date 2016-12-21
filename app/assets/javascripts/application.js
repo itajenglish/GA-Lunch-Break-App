@@ -57,7 +57,7 @@ function initMap() {
 
     autocomplete.addListener('place_changed', function() {
         infowindow.close();
-        marker.setVisible(true);
+        // marker.setVisible(true);
         var place = autocomplete.getPlace();
         if (!place.geometry) {
             // User entered the name of a Place that was not suggested and
