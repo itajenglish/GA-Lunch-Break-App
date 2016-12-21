@@ -27,7 +27,8 @@ before_filter :authorize
   end
 
   def show
-    @place = Place.find(params[:id])
+    @place = Place.find_by(id: params[:id])
+    @comment  = Comment.where(place_id: params[:id])
   end
 
   def update
