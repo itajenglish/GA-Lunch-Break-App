@@ -1,13 +1,16 @@
-<nav class="grey lighten-4">
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo"><%= image_tag("galb.png", size: "150x63", alt: "GA Lunch Break") %></a>
-    <ul class="right hide-on-med-and-down">
-      <li><a class="waves-effect waves-light btn green lighten-2">Home</a></li>
-      <li><a href="#" class="black-text">Grub</a></li>
-      <li><a href="#" class="black-text">Dranks</a></li>
-      <li><a href="#" class="black-text">Hangouts</a></li>
-      <li><a href="#" class="black-text">Log In</a></li>
-      <li><a href="#" class="black-text">Sign Up</a></li>
-    </ul>
-  </div>
-</nav>
+<header>
+  <nav class="black">
+    <div class="nav-wrapper">
+     <a href="/places" class="brand-logo"><%= image_tag("galb_white.png", size: "125x52", alt: "GA Lunch Break") %></a>
+     <ul class="right hide-on-med-and-down">
+          <% if current_user %>
+            <li><span class="header-username">Signed in as <%= current_user.name %></span></li>
+            <li><%= link_to "Logout", '/logout', class: "header-tab" %></li>
+          <% else %>
+            <li><%= link_to 'Login', '/login', class: "header-tab" %></li> <li><%= link_to 'Sign Up', '/signup', class: "header-tab" %></li>
+          <% end %>
+      </ul>
+    </div>
+  </nav>
+</header>
+
