@@ -2,14 +2,15 @@
 <main>
   <div class="container login-form">
     <div class="col s8 offset-s2">
+
      <h1 class="form-headers">Login</h1>
 
       <%= form_tag '/login' do %>
         <h5>Email:</h5> <%= text_field_tag :email %>
         <h5>Password:</h5> <%= password_field_tag :password %>
       <%= submit_tag "Submit" %>
-
       <% end %>
+
     </div>
   </div>
 </main>
