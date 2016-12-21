@@ -23,10 +23,12 @@ before_filter :authorize
 
   def destroy
     Place.destroy(params['id'])
+    Comment.destroy(params['id'])
     redirect_to(:back)
   end
 
   def show
+
     @place = Place.find_by(id: params[:id])
     @comment  = Comment.where(place_id: params[:id])
   end
