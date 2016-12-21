@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>GALunchBreak</title>
+        <title>GALunchBreakApp</title>
         <%= csrf_meta_tags %>
 
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,11 +9,16 @@
     </head>
 
     <body>
-        <!-- <main> -->
-            <!-- <div class="container"> -->
-            <!-- Sessions Login/Signup Code saved in layouts/_header.html.erb partial-->
-                <%= yield %>
-            <!-- </div> -->
-        <!-- </main> -->
+        <% if current_user %>
+        Signed in as
+        <%= current_user.name %>
+        |
+        <%= link_to "Logout", '/logout' %>
+    <% else %>
+        <%= link_to 'Login', '/login' %>
+        |
+        <%= link_to 'Signup', '/signup' %>
+        <% end %>
+        <%= yield %>
     </body>
 </html>

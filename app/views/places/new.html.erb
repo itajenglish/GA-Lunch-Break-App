@@ -1,4 +1,3 @@
-<!-- form for submitting new places -->
 <%= form_for :place, method: 'create', url: {action: "create"} do |f| %>
 <%= label(:place, :name) %><br>
 <%= f.text_field :name %><br>
@@ -12,4 +11,4 @@
 <%= f.submit "Save This Place" %>
 <% end %>
 
-<%= render 'layouts/footer' %>
+<%= render 'footer' %>
