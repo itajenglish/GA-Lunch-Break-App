@@ -27,7 +27,8 @@ before_filter :authorize
   end
 
   def show
-    @place = Place.find(params[:id])
+    @place = Place.find_by(id: params[:id])
+    @comment  = Comment.where(place_id: params[:id])
   end
 
   def update
@@ -37,7 +38,7 @@ before_filter :authorize
                   address: @place['address'],
                   latitude: @place['latitude'],
                   longitude: @place['longitude'],
-                  user_id: 1)
+                  user_id: session[:user_id])
 
     redirect_to("/places")
   end
