@@ -1,7 +1,11 @@
+
+<body class="background_bw">
+
 <%= render 'layouts/header' %>
 <main>
   <div class="container login-form z-depth-2">
     <div class="col s8 offset-s2">
+
 
      <h3 class="form-headers">SIGN IN</h3>
 
@@ -10,8 +14,11 @@
         <h6 class="form-labels">Password:</h6> <%= password_field_tag :password %>
       <%= submit_tag "Sign In", class: "btn waves-effect waves-light red accent-4"%>
 
-      <% end %>
+  <% end %>
+
       </div>
       </div>
       </main>
 <%= render 'layouts/footer' %>
+
+</body>
