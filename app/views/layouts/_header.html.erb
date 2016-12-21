@@ -1,10 +1,12 @@
 <header>
   <nav class="black">
     <div class="nav-wrapper">
-     <a href="/places" class="brand-logo"><%= image_tag("galb_white.png", size: "125x52", alt: "GA Lunch Break") %></a>
+     <a href="/" class="brand-logo"><%= image_tag("galb_white.png", size: "125x52", alt: "GA Lunch Break") %></a>
      <ul class="right hide-on-med-and-down">
           <% if current_user %>
             <li><span class="header-username">Signed in as <%= current_user.name %></span></li>
+            <li><a class="header-tab" href="/">Home</a></li>
+            <li><a class="header-tab" href="/places">My Places</a></li>
             <li><%= link_to "Logout", '/logout', class: "header-tab" %></li>
           <% else %>
             <li><%= link_to 'Login', '/login', class: "header-tab" %></li> <li><%= link_to 'Sign Up', '/signup', class: "header-tab" %></li>
@@ -13,4 +15,3 @@
     </div>
   </nav>
 </header>
-

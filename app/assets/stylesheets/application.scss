@@ -16,6 +16,22 @@
 
 @import "materialize";
 
+.background_blur{
+  background-image: url("background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.background_bw {
+  background-image: url("background_bw.jpg");
+  background-attachment: fixed;
+  background-size: 1650px;
+  background-repeat: no-repeat;
+  background-position: 0px -55px;
+}
+
 @font-face {
   font-family: 'PFDinTextCompPro-Bold';
   src:font-url('PFDinTextCompPro-Bold.ttf') format('truetype');
@@ -51,12 +67,12 @@
       #pac-input {
         background-color: #fff;
         font-family: Roboto;
-        font-size: 15px;
+        font-size: 10px;
         font-weight: 300;
         margin-left: 12px;
         padding: 0 11px 0 13px;
         text-overflow: ellipsis;
-        width: 300px;
+        width: 150px;
       }
 
       #pac-input:focus {
@@ -143,7 +159,7 @@ footer li {
   margin-bottom: 20px;
   height: 440px;
   width: 800px;
-  background-color: rgba(255,215,0,.8);
+  background-color: rgba(255,255,255,.6);
   // border-style: solid;
   // border-color: black;
   // border-width: 2px;
@@ -155,7 +171,7 @@ footer li {
   margin-bottom: 20px;
   height: 700px;
   width: 800px;
-  background-color: rgba(255,215,0,.8);
+  background-color: rgba(255,255,255,.6);
   // border-style: solid;
   // border-color: black;
   // border-width: 2px;
