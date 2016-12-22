@@ -19,6 +19,7 @@
 * Materialize
 * BCrypt
 * Sessions
+* Gon Gem
 
 --------------------------------------------------
 
@@ -28,10 +29,10 @@
 
 ##Contributors:
 
-**_Name_** | **_LinkedIn_** | **_GitHub_** 
----------| -------------|------------
-Laura Ayala | [LinkedIn](https://www.linkedin.com/in/ayalalaura) | [GitHub](https://github.com/ayalalaura)
-Jennifer Christie | [LinkedIn](https://www.linkedin.com/in/jenniferrchristie) | [GitHub](https://github.com/JennRC87)
-Jayan Zaman | [LinkedIn](https://www.linkedin.com/in/jayanzaman) | [GitHub](https://github.com/jayanzaman)
-Taj English | [LinkedIn](https://www.linkedin.com/in/taj-english) | [GitHub](https://github.com/itajenglish)
-Matt Cabezon | [LinkedIn](https://www.linkedin.com/in/matthew-cabezon) | [GitHub](https://github.com/mcabz27)
+**_Name_** | **_LinkedIn_** | **_GitHub_** | **_Email_**
+---------| -------------|------------|------------
+Laura Ayala | [LinkedIn](https://www.linkedin.com/in/ayalalaura) | [GitHub](https://github.com/ayalalaura) | ayala.lauramichelle@gmail.com
+Jennifer Christie | [LinkedIn](https://www.linkedin.com/in/jenniferrchristie) | [GitHub](https://github.com/JennRC87) | jennifer.christie1@gmail.com
+Jayan Zaman | [LinkedIn](https://www.linkedin.com/in/jayanzaman) | [GitHub](https://github.com/jayanzaman) | jayanzaman@gmail.com
+Taj English | [LinkedIn](https://www.linkedin.com/in/taj-english) | [GitHub](https://github.com/itajenglish) | tajenglish@gmail.com
+Matt Cabezon | [LinkedIn](https://www.linkedin.com/in/matthew-cabezon) | [GitHub](https://github.com/mcabz27) | matt.cabezon@gmail.com
