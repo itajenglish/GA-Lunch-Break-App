@@ -1,5 +1,4 @@
-<body class="background_blur">
-    <%= render 'layouts/header' %>
+<%= render 'layouts/header' %>
 
     <div class="row">
         <div class="col s6">
@@ -20,7 +19,7 @@
                 <%= label(:place, :longitude) %><br>
                 <%= f.text_field :longitude %><br>
                 <br>
-                <%= f.submit "Save This Place" %>
+                <%= f.submit "Save This Place", class: "btn waves-effect waves-light red accent-4 edit-btn" %>
                 <% end %>
             </div>
         </div>
@@ -61,7 +60,6 @@
 
     <br>
 
-    <%= render 'layouts/footer' %>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAchzUgA7nscKvpxt3v_YoC1pn5_55GcM&libraries=places&callback=initMap" async defer></script>
+<%= render 'layouts/footer' %>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAchzUgA7nscKvpxt3v_YoC1pn5_55GcM&libraries=places&callback=initMap" async defer></script>
 
-</body>

@@ -16,21 +16,21 @@
 
 @import "materialize";
 
-.background_blur{
-  background-image: url("background.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+// .background_blur{
+//   background-image: url("background.jpg");
+//   background-attachment: fixed;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center center;
+// }
 
-.background_bw {
-  background-image: url("background_bw.jpg");
-  background-attachment: fixed;
-  background-size: 1650px;
-  background-repeat: no-repeat;
-  background-position: 0px -55px;
-}
+// .background_bw {
+//   background-image: url("background_bw.jpg");
+//   background-attachment: fixed;
+//   background-size: 1650px;
+//   background-repeat: no-repeat;
+//   background-position: 0px -55px;
+// }
 
 @font-face {
   font-family: 'PFDinTextCompPro-Bold';
@@ -52,8 +52,17 @@
         margin: 0;
         padding: 0;
         font-family: PFDinTextCompPro-Bold;
-        background-color: grey;
+        // background-color: grey;
       }
+
+  .background_bw {
+  background-image: url("background_bw.jpg");
+  background-attachment: fixed;
+  background-size: 1650px;
+  background-repeat: no-repeat;
+  background-position: 0px -55px;
+}
+
       .controls {
         margin-top: 10px;
         border: 1px solid transparent;
@@ -196,7 +205,7 @@ footer li {
 }
 
 .edit-btn {
-  width: 640px;
+  width: 100%;
 }
 
 .form-labels{
@@ -212,10 +221,23 @@ label{
   background-color: rgba(255,255,255,.6);
 }
 
+.delete-place{
+  background-color: rgba(255,255,255,.8);
+  // margin-top: -40px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
 .edit-place{
   background-color: rgba(255,255,255,.8);
   // margin-top: -40px;
   width: 50%;
   margin: 0 auto;
   padding: 40px;
+}
+
+.recs-header{
+  color: white;
+  text-shadow: 1px 1px 1px #000;
 }
