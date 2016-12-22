@@ -41,10 +41,11 @@
 
       /* element that contains the map. */
 #map {
-  height: 50%;
+  height: 100%;
   width: 100%;
   float: right;
   position: absolute;
+
 }
 
       /* Optional: Makes the sample page fill the window. */
@@ -53,6 +54,7 @@
         margin: 0;
         padding: 0;
         font-family: PFDinTextCompPro-Bold;
+        background-color: grey;
       }
       .controls {
         margin-top: 10px;
@@ -103,7 +105,17 @@ nav {
   line-height: 20px;
 }
 
-
+#blah {
+padding-bottom: 40px;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
 
 a .black-text {
   font-size: 100px;
@@ -112,16 +124,6 @@ a .black-text {
 header li {
   margin-top: 15px;
 }
-
-
-// line dividing footer content
-// footer.page-footer .footer-copyright {
-//   border-top: thin solid #616161;
-// }
-
-// footer{
-//   height: 150px;
-// }
 
 footer li {
   display: inline-block;
@@ -160,7 +162,7 @@ footer li {
   margin-bottom: 20px;
   height: 440px;
   width: 800px;
-  background-color: rgba(255,255,255,.6);
+  background-color: rgba(255,255,255,.8);
   // border-style: solid;
   // border-color: black;
   // border-width: 2px;
@@ -172,7 +174,7 @@ footer li {
   margin-bottom: 20px;
   height: 700px;
   width: 800px;
-  background-color: rgba(255,255,255,.6);
+  background-color: rgba(255,255,255,.8);
   // border-style: solid;
   // border-color: black;
   // border-width: 2px;
@@ -185,44 +187,30 @@ footer li {
   width: 720px;
   text-align: center;
 }
+.card-panel{
+  margin: 0;
+}
+.map-responsive{
+  overflow: hidden;
+  padding-bottom:70.5%;
+  position:relative;
+  height:0;
+}
 
-// // .form-headers{
-// //   // text-align: center;
-// // }
+.edit-btn {
+  width: 640px;
+}
 
 .form-labels{
   font-size: 20px;
 }
 
-// .sessions-bar {
-//   padding: 10px;
-// }
-
-// footer{
-// //   // position: absolute;
-// //   bottom: 0;
-//  // position:fixed;
-//  bottom:  0px;
-//  width: 100%;
-// }
-
-// body {padding:0;margin:0;}
-
-
-
-td, th {
-    padding: 15px 5px;
-    display: table-cell;
-    text-align: left;
-    vertical-align: middle;
-    border-radius: 2px;
-    color: white;
-    font-size: 20px;
+label{
+  font-size: 20px;
+  color: black
 }
 
-h1 {
-    font-size: 4.2rem;
-    line-height: 110%;
-    margin: 2.1rem 0 1.68rem 0;
-    color: white;
+.new-place{
+  background-color: rgba(255,255,255,.6);
 }
+
