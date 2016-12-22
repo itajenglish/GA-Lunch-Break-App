@@ -52,6 +52,7 @@
         margin: 0;
         padding: 0;
         font-family: PFDinTextCompPro-Bold;
+        background-color: grey;
       }
       .controls {
         margin-top: 10px;
@@ -112,16 +113,6 @@ header li {
   margin-top: 15px;
 }
 
-
-// line dividing footer content
-// footer.page-footer .footer-copyright {
-//   border-top: thin solid #616161;
-// }
-
-// footer{
-//   height: 150px;
-// }
-
 footer li {
   display: inline-block;
 }
@@ -159,7 +150,7 @@ footer li {
   margin-bottom: 20px;
   height: 440px;
   width: 800px;
-  background-color: rgba(255,255,255,.6);
+  background-color: rgba(255,255,255,.8);
   // border-style: solid;
   // border-color: black;
   // border-width: 2px;
@@ -171,7 +162,7 @@ footer li {
   margin-bottom: 20px;
   height: 700px;
   width: 800px;
-  background-color: rgba(255,255,255,.6);
+  background-color: rgba(255,255,255,.8);
   // border-style: solid;
   // border-color: black;
   // border-width: 2px;
@@ -185,24 +176,27 @@ footer li {
   text-align: center;
 }
 
-// // .form-headers{
-// //   // text-align: center;
-// // }
+.edit-btn {
+  width: 640px;
+}
 
 .form-labels{
   font-size: 20px;
 }
 
-// .sessions-bar {
-//   padding: 10px;
-// }
+label{
+  font-size: 20px;
+  color: black
+}
 
-// footer{
-// //   // position: absolute;
-// //   bottom: 0;
-//  // position:fixed;
-//  bottom:  0px;
-//  width: 100%;
-// }
+.new-place{
+  background-color: rgba(255,255,255,.6);
+}
 
-// body {padding:0;margin:0;}
+.edit-place{
+  background-color: rgba(255,255,255,.8);
+  // margin-top: -40px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 40px;
+}

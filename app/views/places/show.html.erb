@@ -1,27 +1,28 @@
-<body class="background_blur">
-  <%= render 'layouts/header' %>
-<h1>One Place at a Time, Bruh!</h1>
-<h2>Name: <%= @place.name %></h2>
+<%= render 'layouts/header' %>
+<div class="edit-place">
+  <h2>One Place at a Time, Bruh!</h2>
+  <h3>Name: <%= @place.name %></h3>
   <ul>
-  <h4><li>Address: <%= @place.address %></li></h4>
-  <h4><li>Latitude: <%= @place.latitude %></li></h4>
-  <h4><li>Longitude: <%= @place.longitude %></li></h4>
+    <h4><li>Address: <%= @place.address %></li></h4>
+    <h4><li>Latitude: <%= @place.latitude %></li></h4>
+    <h4><li>Longitude: <%= @place.longitude %></li></h4>
   </ul>
-<br><hr>
-<h2>Comments</h2>
-<% @comment.each do |c| %>
-<ul>
-  <li><%= c.content %></li><%= link_to "Delete Comment", comment_path(c.id), method: :delete, data: {id: c.id, confirm: "Are you sure you want to delete this?"} %>
-</ul>
+  <br>
 
-<% end %>
-<br><hr>
-<%= form_tag(controller: "comments", method: "POST") do %>
-  <%= label_tag(:comment, "Comment On Your Experiece") %>
-  <%= text_field_tag(:comment) %>
-  <%= hidden_field_tag('id', @place.id) %>
-  <%= submit_tag("Comment") %>
-<% end %>
+  <h3>Comments</h3>
+  <% @comment.each do |c| %>
+    <ul>
+      <li><%= c.content %></li><%= link_to "Delete Comment", comment_path(c.id), method: :delete, data: {id: c.id, confirm: "Are you sure you want to delete this?"} %>
+    </ul>
+
+  <% end %>
+  <br>
+  <%= form_tag(controller: "comments", method: "POST") do %>
+    <%= label_tag(:comment, "Comment On Your Experiece") %>
+    <%= text_field_tag(:comment) %>
+    <%= hidden_field_tag('id', @place.id) %>
+    <%= submit_tag "Comment", class: "btn waves-effect waves-light red accent-4 edit-btn" %>
+  <% end %>
+</div>
 <%= render 'layouts/footer' %>
-</body>
-</html>
+
