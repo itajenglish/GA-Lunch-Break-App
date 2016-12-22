@@ -4,7 +4,8 @@ skip_before_filter  :verify_authenticity_token
 before_filter :authorize
 
   def index
-    @places = Place.where(user_id: session[:user_id])
+    @places = Place.where(user_id: session[:user_id]).reverse
+    gon.places = Place.limit(10)
   end
 
   def create

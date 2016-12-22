@@ -3,22 +3,17 @@
     <head>
         <title>GALunchBreakApp</title>
         <%= csrf_meta_tags %>
-
+        <%= include_gon %>
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     </head>
 
-    <body>
-        <% if current_user %>
-        Signed in as
-        <%= current_user.name %>
-        |
-        <%= link_to "Logout", '/logout' %>
-    <% else %>
-        <%= link_to 'Login', '/login' %>
-        |
-        <%= link_to 'Signup', '/signup' %>
-        <% end %>
+    <body class="background_bw">
         <%= yield %>
+
     </body>
+
+
+
+
 </html>
