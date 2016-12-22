@@ -22,8 +22,14 @@
 * Gon Gem
 
 --------------------------------------------------
-
+##ERD
 ![erdplus-diagram_ 1](https://cloud.githubusercontent.com/assets/22873862/21360137/af8b1c66-c6ac-11e6-9eb6-f42e5371f629.png)
+
+--------------------------------------------------
+##Our Wireframes
+![diagram_of_pages](https://cloud.githubusercontent.com/assets/22873862/21429739/22ec4dec-c82e-11e6-933c-2bf386beb0d6.jpg)
+![slack_for_ios_upload](https://cloud.githubusercontent.com/assets/22873862/21429761/347dbc26-c82e-11e6-9ede-1956c14304e8.jpg)
+![slack_for_ios_upload-1](https://cloud.githubusercontent.com/assets/22873862/21429776/45e44fca-c82e-11e6-87b0-483ca3d69eba.jpg)
 
 --------------------------------------------------
 
