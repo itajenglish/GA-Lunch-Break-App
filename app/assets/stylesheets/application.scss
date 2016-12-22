@@ -197,6 +197,8 @@ footer li {
 }
 .card-panel{
   margin: 0;
+  background-color: rgba(255,255,255,.9);
+
 }
 .map-responsive{
   overflow: hidden;
@@ -242,4 +244,13 @@ label{
 .recs-header{
   color: white;
   text-shadow: 1px 1px 1px #000;
+}
+
+td, th {
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+    font-size: 20px;
 }
