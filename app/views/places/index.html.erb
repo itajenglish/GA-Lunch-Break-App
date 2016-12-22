@@ -7,7 +7,7 @@
         </div>
         <p id="notice"><%= notice %></p>
         <div class="col s6">
-            <div class="card-panel">
+            <div class="card-panel myrecs">
                 <%= form_for :place, method: 'create', url: {action: "create"} do |f| %>
                 <%= label(:place, :name) %><br>
                 <%= f.text_field :name %><br>
