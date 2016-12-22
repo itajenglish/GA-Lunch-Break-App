@@ -98,4 +98,8 @@ function initMap() {
 
     });
 
+    $("form input").last().addClass('btn-floating btn-large waves-effect waves-light red').css({
+        fontSize: 20
+    });
+
 }
