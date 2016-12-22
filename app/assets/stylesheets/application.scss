@@ -44,6 +44,7 @@
   height: 50%;
   width: 100%;
   float: right;
+  position: absolute;
 }
 
       /* Optional: Makes the sample page fill the window. */
@@ -206,3 +207,22 @@ footer li {
 // }
 
 // body {padding:0;margin:0;}
+
+
+
+td, th {
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 4.2rem;
+    line-height: 110%;
+    margin: 2.1rem 0 1.68rem 0;
+    color: white;
+}
