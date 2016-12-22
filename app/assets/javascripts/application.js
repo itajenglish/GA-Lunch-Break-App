@@ -24,6 +24,7 @@ function initMap() {
     var infowindow = new google.maps.InfoWindow();
 
     var locations = gon.places
+    console.log(locations)
         // Display multiple markers on a map
     var infoWindow = new google.maps.InfoWindow()
     var marker, i;
@@ -65,7 +66,6 @@ function initMap() {
             window.alert("No details available for input: '" + place.name + "'");
             return;
         }
-
         // If the place has a geometry, then present it on a map.
         if (place.geometry.viewport) {
             map.fitBounds(place.geometry.viewport);
@@ -83,6 +83,8 @@ function initMap() {
             ].join(' ');
         }
 
+
+        document.getElementById('place_name').value = place.name;
         // document.getElementById('current').innerHTML = '<p>' + address + '</p>';
         document.getElementById('place_address').value = address;
         var lat = '';
