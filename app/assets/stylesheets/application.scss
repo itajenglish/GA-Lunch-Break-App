@@ -41,9 +41,9 @@
 
       /* element that contains the map. */
 #map {
-  height: 50%;
+  height: 100%;
   width: 100%;
-  float: right;
+  float: left;
 }
 
       /* Optional: Makes the sample page fill the window. */
@@ -102,7 +102,17 @@ nav {
   line-height: 20px;
 }
 
-
+#blah {
+padding-bottom: 40px;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
 
 a .black-text {
   font-size: 100px;
@@ -183,6 +193,15 @@ footer li {
   margin-top: 20px;
   width: 720px;
   text-align: center;
+}
+.card-panel{
+  margin: 0;
+}
+.map-responsive{
+  overflow: hidden;
+  padding-bottom:70.5%;
+  position:relative;
+  height:0;
 }
 
 // // .form-headers{
