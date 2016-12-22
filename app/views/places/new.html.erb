@@ -1,5 +1,4 @@
-<body class="background_bw">
-  <%= form_for :place, method: 'create', url: {action: "create"} do |f| %>
+<%= form_for :place, method: 'create', url: {action: "create"} do |f| %>
 <%= render "layouts/header" %>
 
 <%= label(:place, :name) %><br>
@@ -13,8 +12,6 @@
 <br>
 <%= f.submit "Save This Place" %>
 <% end %>
-
-</body>
 
 <%= render "layouts/footer" %>
 

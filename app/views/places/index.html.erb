@@ -1,27 +1,31 @@
-<body class="background_blur">
-  <%= render 'layouts/header' %>
-    <input id="pac-input" class="controls" type="text"
-        placeholder="Enter a location">
-
-    <div id="map"></div>
+<%= render 'layouts/header' %>
+<!-- Search bar for map -->
+<input id="pac-input" class="controls" type="text" placeholder="Enter a location">
+<!-- Map is rendered within this div, as per js -->
+<div id="map"></div>
 
 <p id="notice"><%= notice %></p>
 
 <br>
 
-<%= form_for :place, method: 'create', url: {action: "create"} do |f| %>
-<%= label(:place, :name) %><br>
-<%= f.text_field :name %><br>
-<%= label(:place, :address) %><br>
-<%= f.text_field :address %><br>
-<%= label(:place, :latitude) %><br>
-<%= f.text_field :latitude %><br>
-<%= label(:place, :longitude) %><br>
-<%= f.text_field :longitude %><br>
-<br>
-<%= f.submit "Save This Place" %>
-<% end %>
-<h1>Your Recommendations</h1>
+<div class="new-place">
+  <h2>Add New Place</h2>
+
+  <%= form_for :place, method: 'create', url: {action: "create"} do |f| %>
+    <%= label(:place, :name) %><br>
+    <%= f.text_field :name %><br>
+    <%= label(:place, :address) %><br>
+    <%= f.text_field :address %><br>
+    <%= label(:place, :latitude) %><br>
+    <%= f.text_field :latitude %><br>
+    <%= label(:place, :longitude) %><br>
+    <%= f.text_field :longitude %><br>
+    <br>
+    <%= f.submit "Save This Place", class: "btn waves-effect waves-light red accent-4"%>
+  <% end %>
+</div>
+
+<h2>Your Recommendations</h2>
 
 <table>
   <thead>
@@ -50,10 +54,6 @@
 
 <br>
 
-
 <%= render 'layouts/footer' %>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAchzUgA7nscKvpxt3v_YoC1pn5_55GcM&libraries=places&callback=initMap" async defer></script>
 
-
-</body>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAchzUgA7nscKvpxt3v_YoC1pn5_55GcM&libraries=places&callback=initMap" async defer></script>
