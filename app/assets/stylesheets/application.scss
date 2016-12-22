@@ -17,21 +17,21 @@
 
 @import "materialize";
 
-.background_blur{
-  background-image: url("background.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+// .background_blur{
+//   background-image: url("background.jpg");
+//   background-attachment: fixed;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center center;
+// }
 
-.background_bw {
-  background-image: url("background_bw.jpg");
-  background-attachment: fixed;
-  background-size: 1650px;
-  background-repeat: no-repeat;
-  background-position: 0px -55px;
-}
+// .background_bw {
+//   background-image: url("background_bw.jpg");
+//   background-attachment: fixed;
+//   background-size: 1650px;
+//   background-repeat: no-repeat;
+//   background-position: 0px -55px;
+// }
 
 @font-face {
   font-family: 'PFDinTextCompPro-Bold';
@@ -54,6 +54,15 @@
         padding: 0;
         font-family: PFDinTextCompPro-Bold;
       }
+
+  .background_bw {
+  background-image: url("background_bw.jpg");
+  background-attachment: fixed;
+  background-size: 1650px;
+  background-repeat: no-repeat;
+  background-position: 0px -55px;
+}
+
       .controls {
         margin-top: 10px;
         border: 1px solid transparent;
@@ -170,7 +179,7 @@ footer li {
 .signup-form {
   margin-top: 40px;
   margin-bottom: 20px;
-  height: 700px;
+  height: 670px;
   width: 800px;
   background-color: rgba(255,255,255,.8);
   // border-style: solid;
@@ -184,6 +193,7 @@ footer li {
   margin-top: 20px;
   width: 720px;
   text-align: center;
+  padding: 4px;
 }
 .card-panel{
   margin: 0;
@@ -196,7 +206,8 @@ footer li {
 }
 
 .edit-btn {
-  width: 640px;
+  width: 100%;
+  padding: 4px;
 }
 
 .form-labels{
@@ -212,10 +223,23 @@ label{
   background-color: rgba(255,255,255,.6);
 }
 
+.delete-place{
+  background-color: rgba(255,255,255,.8);
+  // margin-top: -40px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
 .edit-place{
   background-color: rgba(255,255,255,.8);
   // margin-top: -40px;
   width: 50%;
   margin: 0 auto;
   padding: 40px;
+}
+
+.recs-header{
+  color: white;
+  text-shadow: 1px 1px 1px #000;
 }

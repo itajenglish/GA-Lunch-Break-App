@@ -1,6 +1,5 @@
-<body class="background_blur">
-    <%= render 'layouts/header' %>
-        <h1 style="color: white; font-size: 46px;" class="center recommendation">GA Students Recommendations</h1>
+<%= render 'layouts/header' %>
+        <h1 class="center recs-header">GA Students Recommendations</h1>
 
     <div class="row">
         <!-- SCSS styling not working had to use inline. -->
@@ -38,7 +37,5 @@
             </div>
         </div>
 
-        <%= render 'layouts/footer' %>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAchzUgA7nscKvpxt3v_YoC1pn5_55GcM&libraries=places&callback=initMap" async defer></script>
-
-    </body>
+<%= render 'layouts/footer' %>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAchzUgA7nscKvpxt3v_YoC1pn5_55GcM&libraries=places&callback=initMap" async defer></script>

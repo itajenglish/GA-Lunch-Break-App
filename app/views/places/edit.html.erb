@@ -1,23 +1,24 @@
-<h1>Editing Places</h1>
+<%= render 'layouts/header' %>
+<div class="edit-place">
+  <h2>Editing Places</h2>
 
-<%= form_for @place do |c| %>
+  <%= form_for @place do |c| %>
 
-<%= c.label :name %><br>
-<%= c.text_field :name %><br>
+  <%= c.label :name %><br>
+  <%= c.text_field :name %><br>
 
-<%= c.label :address %><br>
-<%= c.text_field :address %><br>
+  <%= c.label :address %><br>
+  <%= c.text_field :address %><br>
 
-<%= c.label :latitude %><br>
-<%= c.text_field :latitude %><br>
+  <%= c.label :latitude %><br>
+  <%= c.text_field :latitude %><br>
 
-<%= c.label :longitude %><br>
-<%= c.text_field :longitude %><br>
+  <%= c.label :longitude %><br>
+  <%= c.text_field :longitude %><br>
 
-<% hidden_field(:place, :id) %>
-  <%= c.submit %>
-<% end %>
+  <% hidden_field(:place, :id) %>
+    <%= c.submit "Update", class: "btn waves-effect waves-light red accent-4 edit-btn"%>
+  <% end %>
+</div>
 
-
-<%= link_to 'Show', @place %> |
-<%= link_to 'Back', places_path %>
+<%= render 'layouts/footer' %>
